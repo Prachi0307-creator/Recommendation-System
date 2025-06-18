@@ -1,4 +1,62 @@
-# NEWS Recommendation-System
-The News Article Recommendation System is an innovative application aimed at delivering customized and intelligent news content suggestions to users by analyzing the text of news headlines. This system makes use of advanced natural language processing (NLP) methodologies combined with machine learning models to examine the linguistic and semantic relationships that exist between various news articles. Through this analytical approach, the system is capable of determining which articles are closely related in context and meaning, enabling it to present users with articles that are most relevant to their personal interests and preferences.
+# 📰 News Recommendation System
 
-Rather than offering generic news feeds, the system focuses on understanding each user's reading behavior and preferences by identifying patterns in the types of headlines they engage with. It processes headlines to extract important features and latent meanings, which are then used to compare and match articles with similar topics or themes. This allows the platform to curate a personalized news experience for each individual user. By utilizing NLP to interpret the semantics of text and employing similarity-based recommendation techniques, the system ensures that users receive news content that resonates with their tastes, thereby improving their engagement, satisfaction, and overall experience with digital news consumption.
+## 📌 Overview
+
+The **News Recommendation System** is designed to deliver personalized article suggestions by analyzing the content of news headlines. It utilizes **Natural Language Processing (NLP)** techniques and **Machine Learning** algorithms to compute semantic similarity between different news items and recommend relevant content tailored to user interests.
+
+This project enhances user experience by:
+- Identifying underlying meanings of news headlines
+- Recommending articles based on content similarity
+- Personalizing reading suggestions for individual users
+
+---
+
+## 📁 Dataset
+
+- **Source**: `News_Category_Dataset_v2.json`
+- **Description**: Contains news headlines and their corresponding categories from HuffPost, covering multiple sections like politics, tech, entertainment, etc.
+
+---
+
+## 🧰 Technologies & Libraries Used
+
+- **Language**: Python 3
+- **Libraries**:
+  - `pandas`, `numpy`
+  - `nltk` (tokenization, lemmatization, stopwords)
+  - `scikit-learn` (`TfidfVectorizer`, `cosine_similarity`, `pairwise_distances`)
+  - `matplotlib`, `seaborn` (for data visualization)
+
+---
+
+## 🔍 Core Functionalities
+
+- **Text Preprocessing**:
+  - Tokenization
+  - Stopword Removal
+  - Lemmatization
+
+- **Feature Extraction**:
+  - TF-IDF Vectorization
+
+- **Similarity Computation**:
+  - Cosine Similarity between news vectors
+  - Content-based filtering using distance metrics
+
+- **Recommendation Output**:
+  - Given a news headline, returns top-N similar news articles.
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository or download the notebook.
+2. Make sure you have the required libraries installed:
+   ```bash
+   pip install numpy pandas nltk scikit-learn matplotlib seaborn
+3.Download necessary NLTK resources:
+   ```bash
+     import nltk
+     nltk.download('punkt')
+     nltk.download('wordnet')
+     nltk.download('stopwords')

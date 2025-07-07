@@ -65,5 +65,6 @@ This project enhances user experience by:
 
 ## 👨‍💻 Author
 
-Prachi 
+Prachi
+
 For collaboration or queries, feel free to connect!
